@@ -7,7 +7,7 @@ Description
 I often find myself working on self-contained projects involving the 
 manipulation and analysis of substantial quatities of data in various 
 proprietary formats. Generally I start on these by working with the data by 
-hand and creating command line tools for tasks I find myself repeating.  
+hand and creating command line tools for tasks I find myself repeating.
 Usually, as soon as I've written two or three small tools, I start 
 refactoring some of the code into modules. Before long, I find the need to 
 have different configurations for different systems or data sets, so I add 
