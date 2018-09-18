@@ -22,6 +22,7 @@ This sample Python project illustrates some project level idioms I like to
 use in these cases. It is intended to be suitable to use as a skeleton for 
 new projects. 
 
+
 Directory Structure
 -------------------
 
@@ -30,13 +31,28 @@ Hierarchy Standard (FHS) and I base my project directory structure on it.
 
     sample/
          |---- bin/
+                 |---- _project.py
+                 |---- sample.py
+         |---- doc/
+         |       |---- LICENSE
+         |       |---- TODO
          |---- etc/
          |       |---- sample.ini
          |---- lib/
          |       |---- samplelib.py
          |---- var/
-         |       |---- log/      
-         |       |---- run/      
+                 |---- log/      
+                 |---- run/      
+                         |---- sample/      
+                                 |---- sample.db      
 
+Files
+-----
 
-
+The files in this sample are only meant to represent some of the types of 
+files a typical project might include. One exception is the `project.py` file
+in the `bin/` directory. In order to use the lib directory, I add boilerplate
+to my tools that adds the lib directory to `sys.path`. This boilerplate code
+goes into the `_project.py` file and then I just need to `import _project` in
+each of my tools. This is also a handy place to add other code which I need 
+in every tool, e.g. code to read a configuration file. 
