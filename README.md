@@ -30,21 +30,23 @@ I work on Unix/Linux systems so I'm accustomed to the Filesystem
 Hierarchy Standard (FHS) and I base my project directory structure on it.
 
     sample/
-         |---- bin/
-                 |---- _project.py
-                 |---- sample.py
-         |---- doc/
-         |       |---- LICENSE
-         |       |---- TODO
-         |---- etc/
-         |       |---- sample.ini
-         |---- lib/
-         |       |---- samplelib.py
-         |---- var/
-                 |---- log/      
-                 |---- run/      
-                         |---- sample/      
-                                 |---- sample.db      
+         |-- bin/
+         |   |-- _project.py
+         |   '-- sample.py
+         |-- doc/
+         |   |-- LICENSE
+         |   '-- TODO
+         |-- etc/
+         |   '-- sample.ini
+         |-- lib/
+         |   '-- samplelib.py
+         |-- var/
+         |   |-- log/      
+         |   '-- run/      
+         |       '-- sample/      
+         |           '---- sample.db      
+         |-- .gitignore 
+         '-- README.md 
 
 Files
 -----
